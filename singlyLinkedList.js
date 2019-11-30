@@ -21,7 +21,7 @@ function LinkedList() {
     this.count++;
   };
 
-  this.get = function() {
+  this.display = function() {
     let current = this.head;
     let count = 0;
     while(current && current.value) {
@@ -49,6 +49,9 @@ function LinkedList() {
   };
 }
 
+
+/**implementation of all the above methods */
+
 const linkedList = new LinkedList();
 
 // insertion in linked list
@@ -57,10 +60,10 @@ linkedList.push(20);
 linkedList.push(30);
 linkedList.push(40);
 
-// Get length of lenkedlist
-const length1 = linkedList.get();
+// Get length of linked list
+const length1 = linkedList.display();
 
-// Delete a node from linkedlist
+// Delete a node from linked list
 linkedList.deleteNode(3)
 
 // Get length of linked list after deletion
